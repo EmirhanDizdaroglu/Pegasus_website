@@ -1,0 +1,919 @@
+/* General Styles */
+#body * {
+  font-family: "Open Sans", sans-serif;
+}
+
+#showcase {
+  margin-top: -40px; /* Move the image upward */
+  position: relative; /* Set position to relative */
+  z-index: 1; /* Ensure the image stays below the container */
+}
+.header-logo {
+  margin-left: 10px;
+}
+
+.container {
+  margin: -100px auto 0; /* Adjusted margin-top */
+  width: 80%;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative; /* Set position to relative */
+  z-index: 2; /* Ensure the container stays above the image */
+}
+
+/* Container Top Styles */
+#container-top {
+  display: flex;
+  justify-content: center;
+  height: 290px;
+  width: 1200px;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc; /* Üst kısımları ayırmak için çizgi ekle */
+  padding-bottom: 10px; /* Aşağıda boşluk bırak */
+}
+#container-top h2 {
+  opacity: 0.8;
+  color: #555; /* Gri renk */
+}
+
+/* Options Box Styles */
+.search-button {
+  width: 200px;
+  height: 70px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  background-image: linear-gradient(to right, #fa6a24 0, #f2ac14 100%);
+  text-transform: uppercase;
+}
+.button-container {
+  display: flex;
+  justify-content: right;
+  margin-top: 50px; /* İsteğe bağlı: butonun üstündeki boşluğu ayarlar */
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.options .box {
+  flex-basis: 30%;
+  margin-bottom: 20px;
+}
+
+.options .box:last-child {
+  flex-basis: 100%;
+}
+
+/* Header Container Styles */ /* Header Container Styles */ /* Header Container Styles */ /* Header Container Styles */ /* Header Container Styles */ /* Header Container Styles */ /* Header Container Styles */
+.header-container {
+  padding: 0 40px 0 40px;
+  box-shadow: 0 2px 7px 0 rgb(0 0 0 / 25%);
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1200;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 65px;
+  font-size: 16px;
+  line-height: normal !important;
+  transform: none;
+}
+
+.header-container .header-logo {
+  margin: 10px 10px 10px 0;
+  display: flex;
+  align-items: center;
+  width: 130px;
+}
+
+.header-container .header-logo .svg-logo-wrapper {
+  height: 24px;
+}
+
+.header-container .header-logo .mobile-menu {
+  display: none;
+}
+
+.header-container .header-logo #mobile-menu-toggle {
+  display: none;
+}
+
+.header-container .main-nav {
+  flex-grow: 1;
+  pointer-events: none;
+}
+
+.header-container .main-nav .main-nav-list {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+}
+.header-container .main-nav .main-nav-list {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+}
+/* Main Navigation Styles */
+.main-nav-list {
+  list-style-type: none;
+  margin: 0;
+  /*margin-left: 10px; BEN DEGİSTİRDİM*/
+  padding: 0;
+
+  gap: 20px; /* Ana menü öğeleri arasındaki boşluğu ayarla */
+}
+body .header-container .main-nav .main-nav-list {
+  gap: 40px;
+  margin-left: 40px;
+}
+
+.header-container .header-right-side {
+  height: 100%;
+  /*border-left: 1px solid #ccc;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  position: relative;
+  column-gap: 10px;
+}
+
+.header-container .header-right-side .current-language-wrapper {
+  height: 100%;
+  border-left: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  position: relative;
+}
+.header-container .header-right-side .header-bolbol .bolbol-popup-btn {
+  font-weight: bold;
+  line-height: 1.17;
+  color: #323a47;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.header-container
+  .header-right-side
+  .header-search
+  .header-search-form
+  .header-search-input {
+  border: 0;
+  border-radius: 0px;
+  border-right: 1px solid #ccc;
+  transition: 0.4s ease 0s;
+  border-left: 1px solid #ccc;
+  text-align: left;
+  height: 65px;
+  width: 50px;
+  outline: none !important;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+/*pegasus ikon boyutu*/
+.pegasus-icon {
+  width: 130px;
+  height: 24px;
+  float: left;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font: inherit;
+  vertical-align: baseline;
+}
+.header-container .main-nav-list-item-inner-icon {
+    color: #000;
+    opacity: 0.6;
+    display: inline-block;
+    transform: rotate(90deg);
+    margin-left: 7px;
+}
+.bolbol-popup-btn {
+    font-weight: bold;
+    line-height: 1.17;
+    color: #323a47;
+    text-decoration: none;
+    white-space: nowrap;
+}
+/* Ana menü öğeleri üzerine gelindiğinde */
+.main-nav-list-item:hover {
+  opacity: 0.8; /* Opaklık düşürme */
+}
+/*navbardaki yazılar için*/
+.header-container .main-nav .main-nav-list .main-nav-list-item {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.79;
+}
+
+.header-container .main-nav-list-item-inner {
+  text-decoration: none;
+  color: #323a47;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.item h2 {
+  font-size: 15px;
+}
+
+.box .content {
+  background-color: #f0f0f0; /* Gri arka plan rengi */
+  padding-top: 25px; /* İçerik etrafında boşluk bırakmak için */
+  border-radius: 5px; /* Köşeleri yuvarlamak için */
+  height: 68px;
+  width: 200px;
+}
+
+#container-top img {
+  /*ucuz ucak bileti ara görselleri için*/
+  width: 45px;
+  height: 45px;
+  background-color: #f0f0f0;
+  padding: 1px;
+}
+
+.pgs-360--search-tab-header li.active a {
+    background: #fff;
+    opacity: 1;
+}
+.pgs-360--search-tab-header li a {
+    height: 68px;
+    color: #323a47;
+    background: #f4f5f7;
+    opacity: .6;
+}
+.pgs-360--search-tab-header li a {
+    height: 68px;
+    color: #323a47;
+    background: #f4f5f7;
+    opacity: .6;
+}
+.loading-overlay, .pgs-360--search-tab-header li a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+
+#pgsFlySearchContainer {
+    position: relative;
+    z-index: 3;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+#pgsFlySearchContainer .pgs-360--search-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 25%) 0px 10px 50px;
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0px);
+    overflow: visible;
+    margin-bottom: -45px;
+    z-index: 3;
+    position: relative;
+    margin-top: -18%;
+    margin-bottom: 50px;
+}
+.pgs-360--search-tab-header {
+    position: relative;
+    -webkit-border-top-left-radius: 16px;
+    -webkit-border-top-right-radius: 16px;
+    -moz-border-radius-topleft: 16px;
+    -moz-border-radius-topright: 16px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    overflow: hidden;
+}
+#pgsBannerButtonPause.stop .pgs-banner--button-stop, .item-row-plan, .pgs-360--search-tab-header ul {
+    display: flex;
+}
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+}
+.pgs-360--search-tab-header li {
+    list-style-type: none;
+    justify-content: center;
+    flex: 1;
+    height: 68px;
+    background-color: #f4f5f7;
+    font-size: 15px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: .87;
+    letter-spacing: normal;
+    opacity: 1;
+    color: #323a47;
+    cursor: pointer;
+    border-right: 1px solid #d5d5d5;
+}
+.alerMessagePGS, .pgs-360--search-tab-header li {
+    display: flex;
+    align-items: center;
+}
+.nav__item {
+    position: relative;
+    z-index: 1;
+    width: 25%;
+}
+.pgs-360--search-tab-header li a h1, .pgs-360--search-tab-header li a h2, .pgs-360--search-tab-header li a span {
+    pointer-events: none;
+    margin-left: 10px;
+}
+#pgsFlySearchContainer .b-tab.active {
+    display: block;
+}
+.tab-content {
+    list-style: none;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}form {
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+element.style {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    position: fixed;
+}
+.nxm-360-recent-search-title {
+    margin-bottom: .5rem;
+    width: 100%;
+    font-size: 12px;
+    color: #323a47;
+    display: block;
+    margin-top: -20px;
+    font-weight: 700;
+}
+.nxm-360-search-recent-searches-content .nxm-360-searched-flights {
+    display: flex;
+    overflow-x: scroll;
+    box-sizing: border-box;
+    outline: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-bottom: 15px;
+
+}.nxm-360-search-container .nxm-360-search-selected-airports {
+    -webkit-box-align: end;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+.search-bottom-info {
+    padding: 20px 25px;
+    margin-top: 19px;
+}
+.nav2, .search-bottom-info {
+    width: 100%;
+    background-color: #f4f5f7;
+}
+element.style {
+    color: #525252;
+    font-size: 14px;
+    font-weight: 600;
+}.search-bottom-info svg {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    position: absolute;
+    left: -23px;
+}.searchByBudget {
+    display: flex;
+    align-items: center;
+    color: #4a5261;
+}
+
+.search-bottom-info {
+    height: 50px;
+    display: flex;
+    -webkit-border-bottom-right-radius: 16px;
+    -webkit-border-bottom-left-radius: 16px;
+    -moz-border-radius-bottomright: 16px;
+    -moz-border-radius-bottomleft: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding: 0 38px;
+    align-items: center;
+}
+.nav2, .search-bottom-info {
+    width: 100%;
+    background-color: #f4f5f7;
+}.hype-app-download-homepage-banner-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    overflow: hidden;
+}.c-info--bottom {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    gap: 10px;
+}.nxm2CookieBar .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nxm2CookieBar .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.direction-btns li div {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #323a47;
+    padding: 3px 54px;
+    width: -moz-max-content;
+    width: max-content;
+    cursor: pointer;
+}.nav__link2 {
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+    padding: 0 56px;
+    font-size: 14px;
+    color: rgba(54, 54, 54, .5882352941) !important;
+    font-weight: 500;
+}.nav__item2, .nav__link2 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}.nav__item2 {
+    position: relative;
+    z-index: 1;
+}.nav__item2, .nav__link2 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.direction-btns {
+    padding: 3px;
+    border-radius: 6px;
+    border: solid 1px #e3e6ec;
+    background-color: #f4f5f7;
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    margin-bottom: 3px;
+    position: relative;
+}.nav__list2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+}
+.search-box .in {
+    padding: 27px 40px 10px !important;
+}
+.nxm-360-search-container .nxm-360-search-selected-airports {
+    display: flex !important;
+}
+.nxm-360-search-selected-direction-content.departure {
+    margin-bottom: 0 !important;
+}
+.nxm-360-search-container .nxm-360-search-selected-airports .nxm-360-search-selected-direction-content .nxm-360-search-selected-area {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    overflow: hidden;
+    color: #4a5261;
+    text-align: left;
+    border-bottom: 2px solid #d6d6d6;
+    height: 56px;
+}
+.nxm-360-search-container .nxm-360-search-selected-airports .nxm-360-search-selected-direction-content .nxm-360-search-select-airpot-lists {
+    box-shadow: 0 17px 25px 0 rgb(0 0 0/35%);
+    -webkit-box-shadow: 0 17px 25px 0 rgb(0 0 0/35%);
+    -moz-box-shadow: 0 17px 25px 0 rgb(0 0 0 / 35%);
+    display: flex;
+    border-radius: 12px;
+    width: 350% !important;
+    height: 372px;
+    top: 56px;
+    background: #fff;
+}
+.searchByBudget {
+    display: flex;
+    align-items: center;
+    color: #4a5261;
+}
+.searchByBudget p {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.search-bottom-info p {
+    font-size: 15px;
+    margin: 0 0 0 7px;
+    opacity: .8;
+}
+.desktopText {
+    display: flex !important;
+}
+.search-bottom-info p, .search-elements .datesArea label {
+    opacity: .8;
+    color: #323a47;
+    font-size: 16px;
+    font-weight: 600;
+}
+.searchByBudget p small {
+    font-size: 13px;
+}
+.hype-app-download-homepage-banner-content {
+    display: flex;
+    width: 1200px;
+    height: 282px;
+    border-radius: 12px;
+    border: 2px dashed #F8D777;
+    background: linear-gradient(90deg, #F99D20 0%, #F48024 60.61%, #F48024 100%);
+}
+.hype-app-download-banner-text {
+    margin: 28px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+.hype-app-download-banner-text-title {
+    color: #273444;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 37px;
+}
+.hype-app-download-banner-telephoneImg img {
+    width: 183px;
+}
+.hype-app-download-banner-qrCode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hype-app-download-banner-qrCode-text span {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+.hype-app-download-banner-qrCode-img {
+    margin: 38px 0 15px 0;
+    margin-left: auto;
+}
+.hype-app-download-banner-qrCode-text {
+    text-align: center;
+}
+info__bg__img {
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 12px;
+    height: auto;
+}
+.c-info--bottom a {
+    font-size: 12px;
+    color: #363636;
+    align-items: center;
+    display: flex;
+}
+.c-info__link {
+    display: flex;
+    width: 27%;
+}
+.c-info__title {
+    border: 0 !important;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.c-info__title h3 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+    color: #fff;
+}
+.c-info__row, .c-info__title {
+    display: flex;
+    align-items: center;
+}
+.c-info__bg__img {
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 12px;
+    height: auto;
+}
+.c-info__container {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('img/info-banner-bg.webp');
+    width:1200px;
+    height:85px;
+    
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 12px;
+
+
+}
+.c-info__wrap {
+    color: #bea9a9;
+    position: relative;
+}
+.c-info__row {
+    justify-content: space-between;
+}
+
+.c-info__wrap {
+    color: #fff;
+    position: relative;
+}
+.c-info__desc {
+    width: 47%;
+}
+.c-info__btn {
+    background: #4bb955;
+    box-shadow: 0 2px 4px rgba(0,0,0,.25);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px !important;
+    color: #fff !important;
+    text-align: center;
+    border: 0 !important;
+    padding-right: 24px !important;
+    padding-left: 24px;
+    height: 44px;
+    line-height: 0;
+    transition: all .6s !important;
+    display: flex;
+    align-items: center;
+    
+}
+.c-info__yonca.active {
+    opacity: 1;
+    right: 0;
+}
+.pgs-bestdeals--title h2 {
+    font-family: "Open Sans bold", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bolder;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.pgs-bdeals-title-color {
+    font-family: "Open Sans bold", sans-serif;
+    -o-object-fit: contain;
+    object-fit: contain;
+    background: -webkit-linear-gradient(360deg, #e86b2e, #f2ac14);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pgs-bestdeals--title {
+    display: flex;
+    width: 1240px;
+    height: 76px;
+    font-weight: 800;
+    color: #304659;
+    
+    padding: 0 20px;
+    justify-content: space-between;
+    
+
+}
+
+.pgs-bestdeals--title h2 {
+    font-size: 54px;
+    text-align: center;
+}
+#dropdownBestDeals {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    font-size: 13px;
+    z-index: 9;
+    width: 100%;
+    padding: 25px 13px;
+    text-align: left;
+    cursor: pointer;
+    background-color: transparent;
+    color: #000;
+}
+.pgs-bestdeals--question {
+    width: 301px;
+    margin: 0 0 0 43px;
+    height: 70px;
+}
+.pgs-bestdeals--question {
+    position: relative;
+    width: 301px;
+    flex: none;
+    align-self: flex-start;
+    background-color: #f4f5f7;
+    padding: 0;
+    margin: 25px 0 0;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    height: 70px;
+}
+.pgs-bestdeals--question-text {
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #323a47;
+    margin-bottom: 6px;
+    z-index: 99;
+    pointer-events: none;
+    position: relative;
+    padding-left: 11px;
+    padding-top: 10px;
+    font-size: 10px;
+    height: 100%;
+}
+.pgs-bestdeals--question-arrow-icon {
+    pointer-events: none;
+    transform: translate(0, -50%) rotate(-90deg);
+    -webkit-transform: translate(0, -50%) rotate(-90deg);
+    -moz-transform: translate(0, -50%) rotate(-90deg);
+    -ms-transform: translate(0, -50%) rotate(-90deg);
+    -o-transform: translate(0, -50%) rotate(-90deg);
+    right: 10px;
+    top: 25px;
+}
+.pgs-bestdeals--question-arrow-icon {
+    position: absolute;
+    z-index: 9;
+    transition: .2s linear;
+    -webkit-transition: .2s linear;
+    -moz-transition: .2s linear;
+    -ms-transition: .2s linear;
+    -o-transition: .2s linear;
+}
+.nxm-360-search-container .nxm-360-search-selected-airports .nxm-360-search-selected-direction-content .nxm-360-search-selected-area .wrap .nxm-360-search-selected-placeholder {
+    display: flex;
+    font-weight: 700;
+    margin-top: 14px;
+    font-size: 16px;
+    color: #323a47;
+    opacity: .8;
+    transition: .3s ease-in 0s;
+    position: relative;
+    z-index: 10;
+}
+.dates-value1 .mount {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: -2px;
+}
+.dates-value1 .mount, .dates-value2 .mount, .dates-value1Hotels .mount, .dates-valueVehicle2 .mount {
+    text-align: left;
+}
+
+.itemDate {
+    padding: 0;
+    margin-right: 54px;
+    z-index: 10;
+    position: relative;
+}
+.JS__datepicker-height {
+    height: 65px !important;
+}
+.one_wayShowItem {
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 49px;
+    height: 65px;
+    line-height: 52px;
+    width: 138px;
+    font-size: 16px;
+    padding-left: 0;
+}
+.one_wayShowItem {
+    
+    height: 56px;
+    border-bottom: 2px solid #ccc;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(50, 58, 71, .8);
+    padding-top: 11px;
+    cursor: pointer;
+    padding-bottom: 50px;
+    transition: .5s ease 0s;
+    line-height: 0;
+}
+.nxm2_passenger-select {
+    top: -11px;
+    line-height: 20px;
+    position: absolute;
+    color: #323a47;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: .5;
+}
+.nxm2_form-group.nxm2_passenger-select .nxm2_form-control {
+    line-height: 1;
+    cursor: pointer;
+    padding-top: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 35px;
+    width: 100%;
+    max-width: 120px;
+}
+.hype-app-download-banner-telephoneImg {
+    margin: 25px 112px 0 82px;
+}
+#pgsFlySearchContainer .pgs-360--search-container {
+    margin-top: -160px;
+}
